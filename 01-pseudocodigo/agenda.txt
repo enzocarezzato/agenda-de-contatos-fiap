@@ -1,0 +1,34 @@
+AGENDA DE CONTATOS - PSEUDOCÓDIGO
+
+OBJETIVO: Criar um sistema simples para gerenciar contatos.
+
+ESTRUTURA DE DADOS:
+- Usaremos um VETOR (lista) para armazenar os contatos
+- Cada contato terá: Nome, Telefone, Email
+
+MENU PRINCIPAL:
+1 - Adicionar contato
+2 - Listar contatos
+3 - Buscar contato
+4 - Remover contato
+5 - Sair
+
+FUNÇÃO AdicionarContato()
+    SE houver espaço no vetor ENTÃO
+        LER nome, telefone, email
+        ARMAZENAR no vetor
+        MOSTRAR "Contato adicionado com sucesso!"
+    SENÃO
+        MOSTRAR "Agenda cheia!"
+    FIM SE
+FIM FUNÇÃO
+
+FUNÇÃO ListarContatos()
+    SE vetor estiver vazio ENTÃO
+        MOSTRAR "Nenhum contato cadastrado."
+    SENÃO
+        PARA cada contato no vetor FAÇA
+            MOSTRAR nome, telefone, email
+        FIM PARA
+    FIM SE
+FIM FUNÇÃO
