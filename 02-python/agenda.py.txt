@@ -1,0 +1,21 @@
+agenda = []  # Criando uma lista vazia.
+
+# DEFINIÇÃO DAS FUNÇÕES 
+
+# Descrição: Este procedimento cria um novo contato da agenda.
+# Nome: novo()
+# Tipo: procedimento
+def novo():
+    global agenda # Definindo variável como Global.
+    nome = p_nome()
+    celular = input("celular.....: ")
+    email   = input("E-mail......: ")
+    agenda.append([nome, celular, email]) # Adicionando os dados na agenda
+    print("
+-----------------------------"
+          "
+Registro gravado com sucesso!!!
+"
+          "-------------------------------")
+
+
